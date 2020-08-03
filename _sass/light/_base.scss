@@ -1,0 +1,85 @@
+html {
+  padding-left: calc(100vw - 100%);
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: $primary-background;
+}
+
+p, h1, h2, h3, h4, h5, h6, li {
+  color: $primary-text;
+}
+
+a.nav-item {
+  color: #121212;
+}
+
+a {
+  color: #6f6593;
+}
+
+.fa-heart {
+  color: #f06d6d;
+}
+
+a:hover {
+  color: $primary;
+}
+
+.text-monospace {
+  color: $text-light;
+}
+
+.badge {
+  font-weight: 500;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.badge-warning {
+  background-color: #7c5bbf;
+}
+
+.badge-primary {
+  background-color: $primary;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: $primary-hover;
+}
+
+
+mark {
+  color: $primary-text;
+  background-color: $light-brown;
+  border-radius: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+small {
+  color: $primary-text;
+}
+
+.list-group-item.active {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.list-group-item {
+  background-color: $card-background;
+  color: $list-group-text;
+}
+
+.list-group-item:hover {
+  background-color: $primary-background;
+  color: $list-group-text-hover;
+}

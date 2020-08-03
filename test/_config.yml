@@ -1,0 +1,99 @@
+### Site Settings ###
+title               : Ribeiro's Blog
+source              : ../
+collections_dir     : docs
+data_dir            : docs/_data
+baseurl             : "/portfolYOU-test"
+repository          : YoussefRaafatNasry/portfolYOU
+
+
+### Navbar Settings ###
+nav_exclude:
+  - docs/pages/tags.html
+  - docs/pages/404.html
+  - docs/pages/index.md
+  - docs/pages/documentation/**
+
+
+### Author Info ###
+author:
+  name              : Ribeiro
+  image             : https://avatars1.githubusercontent.com/u/20430410?s=460&u=2d33b83f5119f054888df7f8a9805441e1582b73&v=4
+# behance           : your_username
+# dribbble          : your_username
+  email             : rafael.pr10@gmail.com
+# facebook          : your_username
+  github            : rribeiro1
+# gitlab            : your_username
+  instagram         : rafprib
+  linkedin          : rribeiro10
+# medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+  stackoverflow     : 7690356
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+# twitter           : your_username
+# vimeo             : your_username
+# youtube           : your_channel_name
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Disqus ###
+disqus: rribeiro1-github-io
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  courses:
+    output: true
+    permalink: /courses/:name
+  elements:
+    output: true
+
+
+### Analytics ###
+analytics:
+  enabled: true
+  google:
+    tracking_id: google-tracking-id
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "elements"
+    values:
+      layout: "element"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false
+
+plugins:
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jemoji
+
+
+exclude:
+  - test/
+  - docs/Gemfile
+  - docs/Gemfile.lock
+  - docs/_site/
+  - docs/.sass-cache/

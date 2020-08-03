@@ -1,0 +1,126 @@
+html {
+  padding-left: calc(100vw - 100%);
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: $primary-background;
+}
+
+p, h1, h2, h3, h4, h5, h6, li {
+  color: $primary-text;
+}
+
+a {
+  color: #d4ff00;
+}
+
+.fa-heart {
+  color: #f06d6d;
+}
+
+a:hover {
+  color: $primary;
+}
+
+//--Navbar
+.nav-item {
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+}
+//--Navbar
+
+
+.text-monospace {
+  color: $text-light;
+}
+
+.badge {
+  font-weight: 500;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.badge-warning {
+  background-color: #5212d2;
+}
+
+.badge-primary {
+  background-color: $primary;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: $primary-hover;
+}
+
+
+mark {
+  color: $text-light;
+  background-color: $light-brown;
+  border-radius: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+small {
+  color: $text-light;
+}
+
+.list-group-item.active {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.list-group-item {
+  background-color: $card-background;
+  color: $list-group-text;
+}
+
+.list-group-item:hover {
+  background-color: $primary-background;
+  color: $list-group-text-hover;
+}
+
+
+
+/* --- disqus css -- */
+
+#disqus_thread {
+  color: red;
+  border-style: 0px solid;
+  border-color: #cccccc;
+  padding: 5px;
+  }
+  
+  #dsq-content #dsq-comments .dsq-comment-body {
+  color: red;
+  background-color: #000000;
+  }
+  
+  .dsq-reaction-body {
+  color: red;
+  }
+  
+  .dsq-reaction-header cite, .dsq-reaction-header span {
+  color: red;
+  }
+  
+  .dsq-reaction-retweets {
+  color: red;
+  }
+
+  .textarea-wrapper {
+    background-color: #444;
+  }
+  
+  /*--- end disqus css --*/

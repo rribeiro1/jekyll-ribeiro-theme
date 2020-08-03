@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+// Custom Fonts
+@import url('https://fonts.googleapis.com/css?family=Epilogue');
+@import url('http://fonts.googleapis.com/css?family=Titillium+Web:400,700');
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "dark/variables",
+        "dark/404",
+        "dark/autumn",
+        "dark/base",
+        "dark/blog",
+        "dark/footer",
+        "dark/landing",
+        "dark/navbar",
+        "dark/projects",
+        "dark/skills",
+        "dark/timeline";

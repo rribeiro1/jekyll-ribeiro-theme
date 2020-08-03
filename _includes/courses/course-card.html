@@ -1,0 +1,34 @@
+{%- comment -%} Determine Post URL {%- endcomment -%}
+{%- if post.external_url -%}
+  {%- assign post_url = post.external_url -%}
+{%- else -%}
+  {%- assign post_url = post.url | relative_url -%}
+{%- endif -%}
+
+{%- assign badge_style = 'badge-dark' -%}
+
+<div>
+  <a href="{{ post_url }}" class="project card text-light">
+    {%- if course.image -%}
+    <img class="card-img-top" src="{{ course.image }}" />
+    {%- endif -%}
+    <div class="card-body text-light">
+      <h3 class="card-title">{{ course.name }}</h3>
+      <p class="card-text">
+        {% for tag in course.tags %}
+        <span class="badge badge-primary">{{ tag }}</span>
+        {% endfor %}
+      </p>
+      <p class="card-text">
+        {%- if course.description -%}
+        {{ course.description }}
+        {%- else -%}
+        {{ course.content | truncatewords: 25, "<small><i>  read more...</i></small>" }}
+        {%- endif -%}
+      </p>
+    </div>
+    <div class="card-footer text-light">
+      {{ course.date | date_to_long_string }}
+    </div>
+  </a>
+</div>
